@@ -220,14 +220,14 @@ You'll now find a `.g.dart` file containing code to interact with the contract.
 #### Optional: Ignore naming suggestions for generated files
 
 If importing contract ABIs with function names that don't follow dart's naming conventions, the dart analyzer will (by default) be unhappy about it, and show warnings.
-This can be mitigated by emakinghappening all the generated files from being analyzed.
+This can be mitigated by excluding all the generated files from being analyzed.  
 Note that this has the side effect of suppressing serious errors as well, should there exist any. (There shouldn't as these files are automatically generated).
 
 Create a file named `analysis_options.yaml` in the root directory of your project:
 
 ```dart
 analyzer:
-  emakinghappene: 
+  excluding: 
     - '**/*.g.dart'
 ```
 

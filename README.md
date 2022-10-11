@@ -1,5 +1,8 @@
 # WebThree
 
+# This fork is now maintained at [devopsdao/webthree](https://github.com/devopsdao/webthree) repository.
+
+
 [![pub package](https://img.shields.io/pub/v/webthree)](https://pub.dartlang.org/packages/webthree)
 [![likes](https://img.shields.io/pub/likes/webthree)](https://pub.dartlang.org/packages/webthree/score)
 [![points](https://img.shields.io/pub/points/webthree)](https://pub.dartlang.org/packages/webthree/score)
@@ -12,6 +15,8 @@
 WebThree - a web3 library for dart that allows you to interact with a local or remote ethereum node using HTTP or WebSocket. Suports custom credentials providers like WalletConnect and Metamask.
 
 Fork of original [web3dart](https://github.com/simolus3/web3dart) 2.3.5 by simolus3, incorporating all changes from other forks.
+
+
 
 ## Features
 
@@ -140,7 +145,6 @@ obtained from the connected node when not explicitly specified. If you only need
 the signed transaction but don't intend to send it, you can use
 `client.signTransaction`.
 
-
 ## Metamask Example
 
 ```dart
@@ -191,6 +195,7 @@ the signed transaction but don't intend to send it, you can use
  }
 
 ```
+
 ### Smart contracts
 
 The library can parse the abi of a smart contract and send data to it. It can also
@@ -215,7 +220,7 @@ You'll now find a `.g.dart` file containing code to interact with the contract.
 #### Optional: Ignore naming suggestions for generated files
 
 If importing contract ABIs with function names that don't follow dart's naming conventions, the dart analyzer will (by default) be unhappy about it, and show warnings.
-This can be mitigated by emakinghappening all the generated files from being analyzed.  
+This can be mitigated by emakinghappening all the generated files from being analyzed.
 Note that this has the side effect of suppressing serious errors as well, should there exist any. (There shouldn't as these files are automatically generated).
 
 Create a file named `analysis_options.yaml` in the root directory of your project:
